@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.scss">
+    <link rel="stylesheet" href="styles/fonts.scss">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <title></title>
+  </head>
+<body>
+  <div id="nav" class="landing__navbar navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT US <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav pull-right navbar-nav">
+          <li>
+           <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ENGLISH <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">FRENCH</a></li>
+              <li><a href="#">GERMAN</a></li>
+              <li><a href="#">ITALIAN</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <p><a href="#" class="btn landing__button--registrer" role="button">REGISTRER</a></p>
+          </li>
+        </ul>
+      </div>    
+    </div>
+  </div><!-- /.navbar -->
+
+  <section class="landing__first--container">
+    <div class="col-sm-6 landing__first--container__box">
+        <p class="landing__first--container__text">WE MOVE BUSINESS CARGO AROUND THE WORLD</p>
+      <div class="row">
+        <div class="col-sm-8">
+          <img src="img/shape.svg">
+          <p>Best prices with total transparency</p>
+          <img src="img/shape.svg">
+          <p>Best prices with total transparency</p>
+        </div>
+      </div> 
+    </div> 
+    <div class="col-sm-12">
+      <div id="exTab1" class="container"> 
+        <ul  class="nav nav-pills">
+          <li class="active">
+            <a  href="#1a" data-toggle="tab">Overview</a>
+          </li>
+          <li>
+            <a href="#2a" data-toggle="tab">Using nav-pills</a>
+          </li>
+          <li>
+            <a href="#3a" data-toggle="tab">Applying clearfix</a>
+          </li>
+          <li>
+            <a href="#4a" data-toggle="tab">Background color</a>
+          </li>
+        </ul>
+      </div> 
+      <div class="tab-content clearfix">
+        <div class="tab-pane active" id="1a">
+          <h3>Content's background color is the same for the tab</h3>
+        </div>
+        <div class="tab-pane" id="2a">
+          <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+        </div>
+        <div class="tab-pane" id="3a">
+          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+        </div>
+          <div class="tab-pane" id="4a">
+          <h3>We use css to change the background color of the content to be equal to the tab</h3>
+        </div>
+      </div>
+  </div>
+    </div>   
+  </section>
+
+  <section id="services" class="landing__section--services">
+    <div class="row"> 
+      <div class="landing__box  col-sm-6 col-md-3">
+        <div class="landing__box--icon">
+          <img src="img/plain.svg">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Proin pharetra pharetra neque vitae tempus. Ut dignissim sapien nec.</p>
+            <p><a href="#" class="btn landing__button--details" role="button">MORE DETAILS</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing__box col-sm-6 col-md-3">
+        <div class="landing__box--icon">
+          <img src="img/plain.svg">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Proin pharetra pharetra neque vitae tempus. Ut dignissim sapien nec.</p>
+            <p><a href="#" class="btn landing__button--details" role="button">MORE DETAILS</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing__box col-sm-6 col-md-3">
+        <div class="landing__box--icon">
+          <img src="img/plain.svg">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Proin pharetra pharetra neque vitae tempus. Ut dignissim sapien nec.</p>
+            <p><a href="#" class="btn landing__button--details" role="button">MORE DETAILS</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing__box col-sm-6 col-md-3">
+        <div class="landing__box--icon">
+          <img src="img/plain.svg">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p class="landing__caption--text">Proin pharetra pharetra neque vitae tempus. Ut dignissim sapien nec.</p>
+            <p><a href="#" class="btn landing__button--details" role="button">MORE DETAILS</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+
+    <div class="container">
+    
+      <h1>Here is some more content</h1>
+      
+    </div>
+
+  </section>
+
+  <section id="services__two">
+
+  <h1 id="name"></h1>
+  <p id="gender"></p>
+  </section>
+</body>
+</html>
+

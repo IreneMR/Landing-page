@@ -1,0 +1,84 @@
+html,body {
+  min-height:500px;
+  max-width:100%;
+}
+
+.landing__first--container {
+  height:100vh;
+  min-height:400px;
+  background-size:cover;
+  background-image:url('https://media.giphy.com/media/dGYQ84NqIQhj2/giphy.gif');
+  transition: background 500ms;
+}
+
+.landing__navbar {
+  min-height:40px;
+  max-width:100%;
+  background-color:transparent;
+  transition: background 500ms;
+}
+
+.fixed{
+  background-color:#000;
+}
+
+section {
+  height:calc(90% - 50px);
+  height: 90vh;
+}
+
+.landing__box {
+  height: 128px;
+  padding: 20px;
+}
+
+
+
+.landing__section--services {
+  height: 502px;
+}
+
+.landing__button--details {
+  height: 40px; 
+  width: 129px; 
+  border: 1px solid #78B9E4;  
+  border-radius: 3px;
+}
+
+.landing__button--registrer {
+  height: 43px; 
+  width: 111.75px;  
+  border: 2px solid #FD935C;  
+  border-radius: 2px; 
+  background-color: #FFFFFF;
+  font-size: 14px;
+  color: #FD935C;
+  line-height: 17px; 
+  text-align: center;
+}
+
+.landing__first--container__text {
+  font-size: 43px;
+  color: white;
+  font-family: 'ProximaNova';
+}
+
+.landing__first--container__box {
+  padding-top: 150px;
+}
+
+  
+.landing__caption--text {
+  height: 56px; 
+  width: 270px;
+  font-size: 13px;    
+  line-height: 28px;  
+  text-align: center;
+}
+
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
