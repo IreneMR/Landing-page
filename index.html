@@ -22,6 +22,7 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
+          <!-- <img src="img/star_wars.svg"> -->
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT US <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -52,122 +53,201 @@
             <a href="#">Login</a>
           </li>
           <li>
-            <p><a href="#" class="btn landing__button--registrer" role="button">REGISTRER</a></p>
+            <a href="#" class="btn landing__button--registrer" role="button">REGISTRER</a>
           </li>
         </ul>
       </div>    
     </div>
   </div><!-- /.navbar -->
 
-  <section class="landing__first--container">
-    <div class="col-sm-6 landing__first--container__box">
+  <section id="first-container" class="landing__first--container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 landing__first--container__box">
         <p class="landing__first--container__text">WE MOVE BUSINESS CARGO AROUND THE WORLD</p>
-      <div class="row">
-        <div class="col-sm-8">
-          <img src="img/shape.svg">
-          <p>Best prices with total transparency</p>
-          <img src="img/shape.svg">
-          <p>Best prices with total transparency</p>
-        </div>
-      </div> 
-    </div> 
-    <div class="col-sm-12">
-      <div id="exTab1" class="container"> 
-        <ul  class="nav nav-pills">
-          <li class="active">
-            <a  href="#1a" data-toggle="tab">Overview</a>
-          </li>
-          <li>
-            <a href="#2a" data-toggle="tab">Using nav-pills</a>
-          </li>
-          <li>
-            <a href="#3a" data-toggle="tab">Applying clearfix</a>
-          </li>
-          <li>
-            <a href="#4a" data-toggle="tab">Background color</a>
-          </li>
-        </ul>
-      </div> 
-      <div class="tab-content clearfix">
-        <div class="tab-pane active" id="1a">
-          <h3>Content's background color is the same for the tab</h3>
-        </div>
-        <div class="tab-pane" id="2a">
-          <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
-        </div>
-        <div class="tab-pane" id="3a">
-          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
-        </div>
-          <div class="tab-pane" id="4a">
-          <h3>We use css to change the background color of the content to be equal to the tab</h3>
-        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-sm-4">
+               <img src="img/shape.svg">
+                <p>Best prices with total transparency</p>
+            </div>
+            <div class="col-sm-4">
+               <img src="img/shape.svg">
+                <p>Best prices with total transparency</p>
+            </div>
+            <div class="col-sm-4">
+               <img src="img/shape.svg">
+                <p>Best prices with total transparency</p>
+            </div>
+          </div>
+            
+        </div> 
       </div>
+    </div>
   </div>
-    </div>   
+    
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="tab" role="tabpanel">
+                  <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-envelope-o"></i>Section 1</a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-cube"></i>Section 2</a></li>
+                    <li role="presentation"><a href="#Section3" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-comment"></i>Section 3</a></li>
+                </ul>
+                  <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                        <h2>Section 1</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, metus et scelerisque dignissim, ligula est imperdiet nisl, sit amet malesuada nunc felis in nisi. Nullam dapibus ligula dui, in rhoncus purus euismod nec. Duis in lacinia neque. Etiam tellus.
+                        </p>
+                    </div>
+ 
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                        <h2>Section 2</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, metus et scelerisque dignissim, ligula est imperdiet nisl, sit amet malesuada nunc felis in nisi. Nullam dapibus ligula dui, in rhoncus purus euismod nec. Duis in lacinia neque. Etiam tellus.
+                        </p>
+                    </div>
+ 
+                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                        <h2>Section 3</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, metus et scelerisque dignissim, ligula est imperdiet nisl, sit amet malesuada nunc felis in nisi. Nullam dapibus ligula dui, in rhoncus purus euismod nec. Duis in lacinia neque. Etiam tellus.
+                        </p>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
   </section>
 
-  <section id="services" class="landing__section--services">
+  <section id="services" class="container-fluid landing__section--services">
     <div class="row"> 
-      <div class="landing__box  col-sm-6 col-md-3">
+      <div class="landing__box col-sm-3 col-md-3">
         <div class="landing__box--icon">
-          <img src="img/plain.svg">
+          <img class="landing__icon" src="img/leia.svg">
           <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>Proin pharetra pharetra neque vitae tempus. Ut dignissim sapien nec.</p>
-            <p><a href="#" class="btn landing__button--details" role="button">MORE DETAILS</a></p>
+            <h3 id="name"></h3>
+            <p id="gender"></p>
+            <p id="name-planet"></p>
+            <button href="#" class="btn landing__button--details" role="button">MORE DETAILS</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing__box col-sm-3 col-md-3">
+        <div class="landing__box--icon">
+          <img class="landing__icon" src="img/c3po.svg">
+          <div class="caption">
+            <h3 id="name-2"></h3>
+            <spam id="gender-2"></spam>
+            <p id="name-planet-2"></p>
+            <button href="#" class="btn landing__button--details" role="button">MORE DETAILS</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing__box col-sm-3 col-md-3">
+        <div class="landing__box--icon">
+          <img class="landing__icon" src="img/r2d2.svg">
+          <div class="caption">
+            <h3 id="name-3"></h3>
+            <spam id="gender-3"></spam>
+            <button href="#" class="btn landing__button--details" role="button">MORE DETAILS</button>
           </div>
         </div>
       </div>
 
       <div class="landing__box col-sm-6 col-md-3">
         <div class="landing__box--icon">
-          <img src="img/plain.svg">
+          <img class="landing__icon" src="img/darth_vader.svg">
           <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>Proin pharetra pharetra neque vitae tempus. Ut dignissim sapien nec.</p>
-            <p><a href="#" class="btn landing__button--details" role="button">MORE DETAILS</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="landing__box col-sm-6 col-md-3">
-        <div class="landing__box--icon">
-          <img src="img/plain.svg">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>Proin pharetra pharetra neque vitae tempus. Ut dignissim sapien nec.</p>
-            <p><a href="#" class="btn landing__button--details" role="button">MORE DETAILS</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="landing__box col-sm-6 col-md-3">
-        <div class="landing__box--icon">
-          <img src="img/plain.svg">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p class="landing__caption--text">Proin pharetra pharetra neque vitae tempus. Ut dignissim sapien nec.</p>
-            <p><a href="#" class="btn landing__button--details" role="button">MORE DETAILS</a></p>
+            <h3 id="name-4"></h3>
+            <spam id="gender-4"></spam>
+            <button href="#" class="btn landing__button--details" role="button">MORE DETAILS</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="section-badges" class="landing__section--badges">
 
     <div class="container">
-    
-      <h1>Here is some more content</h1>
+        <div class="landing__box--badges">
+          <h1>Order your product Now</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, metus et scelerisque dignissim, ligula est imperdiet nisl, sit amet malesuada nunc felis in nisi. Nullam dapibus ligula dui, in rhoncus purus euismod nec. Duis in lacinia neque. Etiam tellus.</p>
+        </div>
+        <div class=""> 
+          <div class="col-sm-2">
+            <button href="#" class="btn landing__button--fob" role="button">MORE DETAILS</button>
+            <p id="button__fob">HOLI</p>
+          </div>
+          <div class="col-sm-2">
+            <button href="#" class="btn landing__button--crf" role="button">MORE DETAILS</button>
+            <p id="button__crf">HOLI</p>
+          </div>
+          <div class="col-sm-2">
+            <button href="#" class="btn landing__button--cif" role="button">MORE DETAILS</button>
+            <p id="button__cif">HOLI</p>
+          </div>
+          <div class="col-sm-2">
+            <button href="#" class="btn landing__button--dat" role="button">MORE DETAILS</button>
+            <p id="button__dat">HOLI</p>
+          </div>
+          <div class="col-sm-2">
+            <button href="#" class="btn landing__button--dap" role="button">MORE DETAILS</button>
+            <p id="button__dap">HOLI</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+       <div class="landing__section--line-icons"> 
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="img/at-at.png" class="landing__icon--atat">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-sm-2">
+              <img src="img/arrow.svg">
+            </div>
+            <div class="col-sm-2">
+              <img src="img/death-star.svg" class="landing__icon--atat">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-sm-2">
+              <img src="img/arrow.svg">
+            </div>
+            <div class="col-sm-2">
+              <img src="img/light.svg" class="landing__icon--atat">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-sm-2">
+              <img src="img/arrow.svg">
+            </div>
+            <div class="col-sm-2">
+              <img src="img/falcon.svg" class="landing__icon--atat">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <!-- <div class="col-sm-2">
+              <button href="#" class="btn landing__button--dap" role="button">MORE DETAILS</button>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </div>
+        </div>
       
     </div>
 
   </section>
 
-  <section id="services__two">
+  <section id="services__two" class="landing__section--line-icons">
+    
 
-  <h1 id="name"></h1>
-  <p id="gender"></p>
   </section>
 </body>
 </html>

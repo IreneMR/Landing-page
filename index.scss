@@ -7,24 +7,32 @@ html,body {
   height:100vh;
   min-height:400px;
   background-size:cover;
-  background-image:url('https://media.giphy.com/media/dGYQ84NqIQhj2/giphy.gif');
+  background-image:url('http://1.bp.blogspot.com/-o2x8BNVlJ9k/Vm1820ae6lI/AAAAAAAAL-Q/6vSOaAlwV6c/s1600/vlcsnap-2015-12-12-21h27m45s323.png');
   transition: background 500ms;
 }
 
 .landing__navbar {
   min-height:40px;
   max-width:100%;
-  background-color:transparent;
+  background-color: transparent;
   transition: background 500ms;
 }
 
 .fixed{
-  background-color:#000;
+  background-color:black;
+  opacity: 1;
 }
 
-section {
+
+.landing__first--container,
+.landing__section--services,
+.landing__section--badges {
   height:calc(90% - 50px);
   height: 90vh;
+}
+
+.landing__section--line-icons {
+  padding-top: 100px;
 }
 
 .landing__box {
@@ -41,26 +49,41 @@ section {
 .landing__button--details {
   height: 40px; 
   width: 129px; 
-  border: 1px solid #78B9E4;  
+  border: 2px solid black;  
   border-radius: 3px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+
 }
 
+
 .landing__button--registrer {
-  height: 43px; 
-  width: 111.75px;  
-  border: 2px solid #FD935C;  
-  border-radius: 2px; 
-  background-color: #FFFFFF;
-  font-size: 14px;
-  color: #FD935C;
+  height: 40px; 
+  width: 129px; 
+  border: 2px solid white;  
+  border-radius: 3px; 
+  background-color: black;
+  // font-size: 14px;
+  color: white;
   line-height: 17px; 
   text-align: center;
+  opacity: 1;
+  // transition:0.3s ease all;
+
+  &:hover {
+    color:#FFF;
+  }
 }
 
 .landing__first--container__text {
   font-size: 43px;
   color: white;
-  font-family: 'ProximaNova';
 }
 
 .landing__first--container__box {
@@ -81,4 +104,34 @@ section {
   color : white;
   background-color: #428bca;
   padding : 5px 15px;
+}
+
+.landing__box--icon {
+  text-align: center;
+}
+
+.landing__icon {
+  width: 20%;
+}
+
+.landing__icon--atat {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.landing__box--badges {
+  text-align: center;
+}
+
+#button__fob, #button__crf , #button__cif, #button__dat, #button__dap {
+  display: none;
 }
