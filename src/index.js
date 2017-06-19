@@ -7,9 +7,18 @@ var urlPlanets = "http://swapi.co/api/planets/?format=json";
 var characters = [];
 var planets = [];
 
+//SWIP INPUTS TAB
+$(function (){
+    $('#changePlanet').on('click', function(){
+        console.log('holi');
+        var pickvalue = $('#changeValue').val();
+        $('#changeValue').val($('#changeValue2').val());
+        $('#changeValue2').val(pickvalue);
+    });
+});
+
 // GET CHARACTERS
 function getcharacters(page){
-    console.log(characters);
     $('.caption').each(function(){
         var $this = $(this);
         var $charNumber = $this.data('character');

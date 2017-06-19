@@ -1,3 +1,5 @@
+@import  'variables';
+
 html,body {
   min-height:500px;
   max-width:100%;
@@ -10,17 +12,6 @@ h3 {
 .display_none {
   display: none;
 }
-
-
-$white-color: #FFF;
-$black-color: #000;
-$grey-color: #DDD;
-$dark-grey-color: #545250;
-$light-grey-color: #979797;
-$light-grey-2: #E5E5E5;
-$dark-grey-2: #777777;
-$blue-color: #2CA1E9;
-$light-white: #F1F1F1;
 
 //NAVBAR
 .landing__navbar {
@@ -65,7 +56,7 @@ $light-white: #F1F1F1;
 }
 .landing__first--container__box {
   padding-top: 150px;
-  color: #DDD;
+  color: $grey-color;
 }
 
 .landing__header--text__icons {
@@ -74,10 +65,7 @@ $light-white: #F1F1F1;
 
 //TABS
 .tab-content {
-
-}
-.tab-content {
-  color: #DDD;
+  color: $grey-color;
 }
 .nav-tabs img {
   display: none;
@@ -88,7 +76,7 @@ $light-white: #F1F1F1;
 }
 
 .landing__input--icons__arrows {
-  background-color: #545250;
+  background-color: $dark-grey-color;
   height: 35px;
   width: 50px;
   border: none;
@@ -98,20 +86,19 @@ $light-white: #F1F1F1;
 .landing__button--quote {
   height: 35px; 
   width: 129px; 
-  border: 2px solid #FFF;  
+  border: 2px solid $white-color;  
   border-radius: 3px; 
   background-color: $black-color;
-  color: #FFF;
+  color: $white-color;
   line-height: 17px; 
   text-align: center;
   opacity: 1;
   &:hover {
-    color:#FFF;
+    color:$white-color;
   }
 }
 .landing__input {
-  // background: url('img/calendar.svg') no-repeat scroll 7px 7px;
-  background-color: #FFF;
+  background-color: $white-color;
   background-position: 0 -30px;
   padding: 3px;
   padding-left: 20px;
@@ -142,7 +129,7 @@ $light-white: #F1F1F1;
   font-weight: bold;
   text-align: center;
   &:hover {
-    color: #FFF;
+    color: $white-color;
     background-color: $black-color;
   }
 }
@@ -173,22 +160,26 @@ $light-white: #F1F1F1;
 .landing__pill--box {
   display: inline-block;
 }
-.landing__button--text{
+.landing__button--text {
   position: relative;
   outline: 0 !important;
 }
-.landing__button--text.active::after {
-  content: '';
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
-  bottom: -8px;
-  width: 0;
-  height: 0;
-  border-top: 8px solid #DDD;
-  border-right: 8px solid transparent;
-  border-left: 8px solid transparent;
+
+.landing__button--text.active {
+  &:after {
+    content: '';
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -8px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid $grey-color;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+  }
 }
+
 .landing__pill--text {
   text-align: center;
   height: 30px;
@@ -210,28 +201,27 @@ $light-white: #F1F1F1;
 }
 
 //FOOTER
+
 #sub-footer {
-}
-#sub-footer {
-  border-top: 1px solid #979797;
+  border-top: 1px solid $light-grey-color;
   padding-top: 30px;
-}
-#sub-footer ul{
-  padding-left: 0;
-  list-style-type: none;
-}
-#sub-footer li a {
-  color: #777777;
-  text-decoration: none;
-}
-#sub-footer li a.landing__list--title {
-  color: #2CA1E9;
-  text-transform: uppercase;
-  line-height: 2em;
+  ul{
+    padding-left: 0;
+    list-style-type: none;
+    li a {
+      color: $dark-grey-2;
+      text-decoration: none;
+      &.landing__list--title {
+        color: $blue-color;
+        text-transform: uppercase;
+        line-height: 2em;
+      }
+    }
+  }
 }
 
 .landing__footer {
-  background-color: #E5E5E5;
+  background-color: $light-grey-2;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -252,14 +242,14 @@ $light-white: #F1F1F1;
 .landing__footer--rectangle {
   width: 282px;
   height: 160px;
-  background-color: #F1F1F1;
+  background-color: $light-white;
   display: inline-block;
 }
 .landing__footer--triangle {
   width: 0;
   height: 0;
   border-top: 80px solid transparent;
-  border-left: 36px solid #F1F1F1;
+  border-left: 36px solid $light-white;
   border-bottom: 80px solid transparent;
   display: inline-block;
 }
@@ -272,26 +262,6 @@ $light-white: #F1F1F1;
 .landing__footer--text {
   font-size: 12px;
 }
-
-
-/*#sub-footer {
-  border-top: 1px solid #979797;
-  padding-top: 30px;
-  ul{
-    padding-left: 0;
-    list-style-type: none;
-    li a {
-      color: #777777;
-      text-decoration: none;
-      &.landing__list--title {
-        color: #2CA1E9;
-        text-transform: uppercase;
-        line-height: 2em;
-      }
-    }
-  }
-}*/
-
 
 @media (min-width: 768px) {
 
@@ -342,24 +312,3 @@ $light-white: #F1F1F1;
     padding-right: 40px;
   }
 }
-
-
-
-
-
-
-  
-// .landing__caption--text {
-//   height: 56px; 
-//   width: 270px;
-//   font-size: 13px;    
-//   line-height: 28px;  
-//   text-align: center;
-// }
-
-
-// #exTab1 .tab-content {
-//   color : white;
-//   background-color: #428bca;
-//   padding : 5px 15px;
-// }
