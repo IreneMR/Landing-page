@@ -10,7 +10,6 @@ var planets = [];
 //SWIP INPUTS TAB
 $(function (){
     $('#changePlanet').on('click', function(){
-        console.log('holi');
         var pickvalue = $('#changeValue').val();
         $('#changeValue').val($('#changeValue2').val());
         $('#changeValue2').val(pickvalue);
