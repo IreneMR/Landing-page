@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="styles/_fonts.scss">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   
+    <script type="text/javascript" src="dist/bundle.js"></script>
+    <title></title>
+  </head>
+<body>
+
+  <!-- NAVBAR -->
+  <div id="nav" class="landing__navbar navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <!-- <img src="img/star_wars.svg"> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT US <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav pull-right navbar-nav">
+          <li>
+           <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ENGLISH <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">FRENCH</a></li>
+              <li><a href="#">GERMAN</a></li>
+              <li><a href="#">ITALIAN</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="#" class="btn landing__button--registrer" role="button">REGISTRER</a>
+          </li>
+        </ul>
+      </div>    
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <section id="first-container" class="landing__first--container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 landing__first--container__box">
+          <h1 class="landing__first--container__text">WE MOVE BUSINESS CARGO AROUND THE GALAXY</h1>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="col-sm-4">
+                <img src="img/shape.svg" class="landing__header--text__icons">
+                <p class="landing__header--text__icons">Best prices with total transparency</p>
+              </div>
+              <div class="col-sm-4">
+                <img src="img/shape.svg" class="landing__header--text__icons">
+                <p class="landing__header--text__icons">Best prices with total transparency</p>
+              </div>
+              <div class="col-sm-4">
+                <img src="img/shape.svg" class="landing__header--text__icons">
+                <p class="landing__header--text__icons">Best prices with total transparency</p>
+              </div>
+            </div>            
+          </div> 
+        </div>
+      </div>
+    </div>
+    
+    <!-- TABS -->
+    <div class="container">
+      <div class="row">
+          <div class="col-xs-12">
+              <div class="tab" role="tabpanel">
+                  <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab"><img src="img/boat.svg" class="landing__icon--tab"></img>Sec. 1</a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab"><img src="img/plane.svg" class="landing__icon--tab"></img>Sec. 2</a></li>
+                    <li role="presentation"><a href="#Section3" aria-controls="settings" role="tab" data-toggle="tab"><img src="img/hand.svg" class="landing__icon--tab"></img>Sec. 3</a></li>
+                </ul>
+                  <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                        <form class="row">
+                          <div class="col-xs-12 col-sm-5 col-md-2">
+                            <label for="inputFrom">Origin:</label>
+                            <input type="text" class="form-control" id="inputFrom" placeholder="Type in any planet">
+                          </div>
+
+                          <div class="col-xs-12 col-sm-2 col-md-1 landing__input--icon">
+                            <label for="inputFrom"></label>
+                            <button class="landing__input--icons__arrows" type="button"><img src="img/arrows.svg"></img></button>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-5 col-md-2">
+                            <label for="inputTo">Destination:</label>
+                            <input type="text" class="form-control" id="inputTo" placeholder="Type in any planet">
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-2">
+                            <label for="select">What are you shipping?</label>
+                            <select class="form-control">
+                              <option>Select one option</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-2">
+                            <label for="calendar">Aprox departure date:</label>
+                             <div class="form-group"> 
+                                <input type="date" class="form-control"/>
+                              </div>      
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-2 landing__input--icon">
+                            <button type="submit" class="btn landing__button--quote">GET A QUOTE</button>
+                          </div>
+                        </form>
+                    </div>
+ 
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                      <form class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                          <label for="inputFrom">Email:</label>
+                          <input type="email" class="form-control" id="inputFrom" placeholder="Your email">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                          <label for="inputTo">Password:</label>
+                          <input type="password" class="form-control" id="inputTo" placeholder="Type in any planet">
+                        </div>
+                      </form>
+
+                    </div>
+ 
+                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                      <form class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                          <label for="inputFrom">Adress:</label>
+                          <input type="text" class="form-control" id="inputFrom" placeholder="Your email">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                          <label for="inputTo">Zip code:</label>
+                          <input type="number" class="form-control" id="inputTo" placeholder="Type in any planet">
+                        </div>
+                      </form>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARACTERS -->
+  <section id="services" class="col-md-12 landing__section--services">
+    <h1 class="hidden">CHARACTERS</h1><!-- section demands h1 -->
+    <div class="row"> 
+      <div class="landing__box col-xs-6 col-sm-3">
+        <div class="landing__box--icon">
+          <img class="landing__icon" src="img/leia.svg">
+          <div class="caption" data-character="4">
+            <h3 class="name"></h3>
+            <p>Gender: <span class="gender"></span></p>
+            <p>Year of birth: <span class="birth"></span></p>
+            <button class="btn landing__button--char" role="button">MORE DETAILS</button>
+            <p class="button__text display_none">Hair color: <span class="hair"></span></p>
+            <p class="button__text display_none">Eye color: <span class="eyes"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing__box col-xs-6 col-sm-3">
+        <div class="landing__box--icon">
+          <img class="landing__icon" src="img/c3po.svg">
+          <div class="caption" data-character="1">
+            <h3 class="name"></h3>
+            <p>Gender: <span class="gender"></span></p>
+            <p>Year of birth: <span class="birth"></span></p>
+            <button class="btn landing__button--char" role="button">MORE DETAILS</button>
+            <p class="button__text display_none">Hair color: <span class="hair"></span></p>
+            <p class="button__text display_none">Eye color: <span class="eyes"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing__box col-xs-6 col-sm-3">
+        <div class="landing__box--icon">
+          <img class="landing__icon" src="img/r2d2.svg">
+          <div class="caption" data-character="2">
+            <h3 class="name"></h3>
+            <p>Gender: <span class="gender"></span></p>
+            <p>Year of birth: <span class="birth"></span></p>
+            <button class="btn landing__button--char" role="button">MORE DETAILS</button>
+            <p class="button__text display_none">Hair color: <span class="hair"></span></p>
+            <p class="button__text display_none">Eye color: <span class="eyes"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing__box col-xs-6 col-sm-3">
+        <div class="landing__box--icon">
+          <img class="landing__icon" src="img/darth_vader.svg">
+          <div class="caption" data-character="3">
+            <h3 class="name"></h3>
+            <p>Gender: <span class="gender"></span></p>
+            <p>Year of birth: <span class="birth"></span></p>
+            <button class="btn landing__button--char" role="button">MORE DETAILS</button>
+            <p class="button__text display_none">Hair color: <span class="hair"></span></p>
+            <p class="button__text display_none">Eye color: <span class="eyes"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILL BUTTONS -->
+  <section id="section-badges" class="landing__section--badges">
+    <div class="landing__pill--container">
+        <div class="landing__box--badges">
+          <h1>Order your product Now</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, metus et scelerisque dignissim, ligula est imperdiet nisl, sit amet malesuada nunc felis in nisi. Nullam dapibus ligula dui, in rhoncus purus euismod nec. Duis in lacinia neque. Etiam tellus.</p>
+        </div>
+        <div class="landing__open--box__container"> 
+          <div class="landing__pill--box">
+            <button href="#" class="btn landing__button--text" role="button" data-text="Lorem ipsum dolor sit amet">FOB</button>
+          </div>
+          <div class="landing__pill--box">
+            <button href="#" class="btn landing__button--text" role="button" data-text="Consectetur adipiscing elit">CFR</button>
+          </div>
+          <div class="landing__pill--box">
+            <button href="#" class="btn landing__button--text" role="button" data-text="Phasellus pretium">CIF</button>
+          </div>
+          <div class="landing__pill--box">
+            <button href="#" class="btn landing__button--text" role="button" data-text="Metus et scelerisque dignissim">DAT</button>
+          </div>
+          <div class="landing__pill--box">
+            <button href="#" class="btn landing__button--text" role="button" data-text="Ligula est imperdiet nisl">DAP</button>
+          </div>
+        </div>
+        <div class="landing__pill--text"></div>
+    </div>
+
+    <!-- PROGRESS ICONS -->
+    <div class="container">
+       <div class="landing__section--line-icons"> 
+          <div class="row landing__section--line--flex">
+            <div class="col-xs-5 col-sm-3 col-offset-md-1 col-md-2">
+              <img src="img/tie.svg" class="landing__progress--icon">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1">
+              <img src="img/arrow.svg" class="landing__progress--arrow">
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-2">
+              <img src="img/death-star.svg" class="landing__progress--icon">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1">
+              <img src="img/arrow.svg" class="landing__progress--arrow">
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-2">
+              <img src="img/light.svg" class="landing__progress--icon">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1">
+              <img src="img/arrow.svg" class="landing__progress--arrow">
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-2">
+              <img src="img/falcon.svg" class="landing__progress--icon">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <!-- <div class="col-sm-2">
+              <button href="#" class="btn landing__button--dap" role="button">MORE DETAILS</button>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </div>
+        </div>    
+    </div>
+
+  </section>
+
+   <!-- FOOTER -->
+  <aside id="sub-footer" class="container">
+    <div class="row">
+      <div class="col-xs-6 col-sm-4 col-md-2">
+        <ul>
+          <li><a class="landing__list--title" href="#">OCEAN FREIGHT</a></li>
+          <li><a href="#">What do we do for you…</a></li>
+          <li><a href="#">FCL (Full Containers)</a></li>
+          <li><a href="#">LCL or grouping</a></li>
+          <li><a href="#">Import/Export</a></li>
+          <li><a href="#">High Volume</a></li>
+          <li><a href="#">TECO for inland origin...</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-2">
+        <ul>
+          <li><a class="landing__list--title" href="#">AIR FREIGTH</a></li>
+          <li><a href="#">What do we do for you…</a></li>
+          <li><a href="#">Import/Export</a></li>
+          <li><a href="#">High Volume</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-2">
+        <ul>
+          <li><a class="landing__list--title" href="#">MOVING SHIPPING</a></li>
+          <li><a href="#">What do we do for you…</a></li>
+          <li><a href="#">Individuals</a></li>
+          <li><a href="#">Relocation moving ...</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-2">
+        <ul>
+          <li><a class="landing__list--title" href="#">OTHER SERVICES</a></li>
+          <li><a href="#">Our Platform</a></li>
+          <li><a href="#">Personalized servive</a></li>
+          <li><a href="#">Documentation and…</a></li>
+          <li><a href="#">Payment processing</a></li>
+          <li><a href="#">Cargo Insurance</a></li>
+          <li><a href="#">Paleting services</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-2">
+        <ul>
+          <li><a class="landing__list--title" href="#">HELP</a></li>
+          <li><a href="#">Help for Ocean Freight</a></li>
+          <li><a href="#">Help for air freight</a></li>
+          <li><a href="#">Help for international…</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-2">
+        <ul>
+          <li><a class="landing__list--title" href="#">AGENTS MARKETPLACE</a></li>
+          <li><a class="landing__list--title" href="#">ABOUT US</a></li>
+          <li><a class="landing__list--title" href="#">TERMS GLOSSARY</a></li>
+          <li><a class="landing__list--title" href="#">BLOG</a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="landing__footer">
+    <div class="landing__footer--shape">
+      <div class="landing__footer--rectangle"></div><!--
+   --><div class="landing__footer--triangle"></div>
+    </div>
+    <img src="img/nvocc.png" class="landing__footer--icon">
+    <img src="img/nvocc.png" class="landing__footer--icon">
+    <img src="img/nvocc.png" class="landing__footer--icon">
+    <img src="img/nvocc.png" class="landing__footer--icon">
+    <img src="img/nvocc.png" class="landing__footer--icon">
+  </footer>
+  <div class="container landing__footer--copy">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-sm-2">
+          <p class="landing__footer--text"><a href="">Copyright © 2015 sadasd</a></p>
+        </div>
+        <div class="col-sm-2">
+          <p class="landing__footer--text"><a href="">Web Site Terms of Use</a></p>
+        </div>
+        <div class="col-sm-2">
+          <p class="landing__footer--text"><a href="">Privacy Notice</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

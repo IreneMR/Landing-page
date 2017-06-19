@@ -1,0 +1,365 @@
+html,body {
+  min-height:500px;
+  max-width:100%;
+  font-family: 'ProximaNova', Helvetica, Arial, sans-serif;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+}
+.display_none {
+  display: none;
+}
+
+
+$white-color: #FFF;
+$black-color: #000;
+$grey-color: #DDD;
+$dark-grey-color: #545250;
+$light-grey-color: #979797;
+$light-grey-2: #E5E5E5;
+$dark-grey-2: #777777;
+$blue-color: #2CA1E9;
+$light-white: #F1F1F1;
+
+//NAVBAR
+.landing__navbar {
+  min-height:40px;
+  max-width:100%;
+  background-color: transparent;
+  transition: background 500ms;
+}
+.fixed{
+  background-color:$black-color;
+  opacity: 1;
+}
+.landing__button--registrer {
+  height: 40px; 
+  width: 129px; 
+  border: 2px solid $white-color;  
+  border-radius: 3px; 
+  background-color: $black-color;
+  color: $white-color;
+  line-height: 17px; 
+  text-align: center;
+  opacity: 1;
+  &:hover {
+    color:$white-color;
+  }
+}
+
+//HEADER
+.landing__first--container,
+.landing__section--services,
+.landing__section--badges {
+  height:calc(90% - 50px);
+}
+.landing__first--container {
+  min-height:500px;
+  background-size:cover;
+  background-image:url('http://wallpapercave.com/wp/ItmVuT6.jpg');
+  transition: background 500ms;
+}
+.landing__first--container__text {
+  font-size: 43px;
+}
+.landing__first--container__box {
+  padding-top: 150px;
+  color: #DDD;
+}
+
+.landing__header--text__icons {
+  display: inline-block;
+}
+
+//TABS
+.tab-content {
+
+}
+.tab-content {
+  color: #DDD;
+}
+.nav-tabs img {
+  display: none;
+}
+
+.landing__input--icon {
+  padding-top: 25px;
+}
+
+.landing__input--icons__arrows {
+  background-color: #545250;
+  height: 35px;
+  width: 50px;
+  border: none;
+  border-radius: 3px;
+}
+
+.landing__button--quote {
+  height: 35px; 
+  width: 129px; 
+  border: 2px solid #FFF;  
+  border-radius: 3px; 
+  background-color: $black-color;
+  color: #FFF;
+  line-height: 17px; 
+  text-align: center;
+  opacity: 1;
+  &:hover {
+    color:#FFF;
+  }
+}
+.landing__input {
+  // background: url('img/calendar.svg') no-repeat scroll 7px 7px;
+  background-color: #FFF;
+  background-position: 0 -30px;
+  padding: 3px;
+  padding-left: 20px;
+}
+
+.tab-pane {
+  padding-top: 10px;
+}
+
+//CHARACTERS
+.landing__section--services{
+  padding-top: 30px;
+}
+.landing__box {
+  height: 375px;
+  padding: 20px;
+}
+.landing__box .caption h3{
+  height: 52px;
+  margin-bottom: 10px;
+}
+.landing__button--details {
+  height: 40px; 
+  width: 129px; 
+  border: 2px solid $black-color;  
+  border-radius: 3px;
+  color: $black-color;
+  font-weight: bold;
+  text-align: center;
+  &:hover {
+    color: #FFF;
+    background-color: $black-color;
+  }
+}
+.landing__button--char {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+.landing__box--icon {
+  text-align: center;
+}
+.landing__icon {
+  width: 80px;
+}
+
+//PILL BUTTONS
+.landing__pill--container {
+  padding: 0 3.44%;
+}
+.landing__box--badges {
+  text-align: center;
+  max-width: 686px;
+  margin: 0 auto 40px;
+}
+.landing__open--box__container {
+  width: 282px;
+  margin: 0 auto;
+}
+.landing__pill--box {
+  display: inline-block;
+}
+.landing__button--text{
+  position: relative;
+  outline: 0 !important;
+}
+.landing__button--text.active::after {
+  content: '';
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid #DDD;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+.landing__pill--text {
+  text-align: center;
+  height: 30px;
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+
+
+//PROGRESS ICONS
+.landing__section--line-icons {
+  padding-bottom: 50px;
+}
+.landing__progress--icon {
+  width: 100px;
+  margin-bottom: 30px;
+}
+.landing__progress--arrow {
+  margin-top: 40px;
+}
+
+//FOOTER
+#sub-footer {
+}
+#sub-footer {
+  border-top: 1px solid #979797;
+  padding-top: 30px;
+}
+#sub-footer ul{
+  padding-left: 0;
+  list-style-type: none;
+}
+#sub-footer li a {
+  color: #777777;
+  text-decoration: none;
+}
+#sub-footer li a.landing__list--title {
+  color: #2CA1E9;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+.landing__footer {
+  background-color: #E5E5E5;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 30px;
+}
+
+.landing__footer--icon {
+  height: 50px;
+  margin: 30px;
+}
+
+.landing__footer--shape {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.landing__footer--rectangle {
+  width: 282px;
+  height: 160px;
+  background-color: #F1F1F1;
+  display: inline-block;
+}
+.landing__footer--triangle {
+  width: 0;
+  height: 0;
+  border-top: 80px solid transparent;
+  border-left: 36px solid #F1F1F1;
+  border-bottom: 80px solid transparent;
+  display: inline-block;
+}
+
+.landing__footer--copy {
+  height: 60px;
+  padding-top: 20px;
+}
+
+.landing__footer--text {
+  font-size: 12px;
+}
+
+
+/*#sub-footer {
+  border-top: 1px solid #979797;
+  padding-top: 30px;
+  ul{
+    padding-left: 0;
+    list-style-type: none;
+    li a {
+      color: #777777;
+      text-decoration: none;
+      &.landing__list--title {
+        color: #2CA1E9;
+        text-transform: uppercase;
+        line-height: 2em;
+      }
+    }
+  }
+}*/
+
+
+@media (min-width: 768px) {
+
+  .navbar-nav>li>a {
+    padding-top: 10px !important;
+  }
+
+  //TABS
+  .nav-tabs img {
+  }
+  .nav-tabs img {
+    display: inline-block;
+  }
+
+  //CHARACTERS
+  .landing__icon {
+    width: 60px;
+  }
+  .landing__box {
+    height: 300px;
+  }
+  .landing__box .caption h3 {
+    height: auto;
+  }
+  .landing__button--char {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1170px) {
+  //CHARACTERS
+  .landing__icon {
+    width: 65px;
+  }
+  .landing__box {
+    height: 335px;
+  }
+  .landing__footer {
+    align-items: center;
+    justify-content: flex-end;
+    height: 160px;
+  }
+  .landing__footer--shape {
+    display: block;
+  }
+  .landing__footer--icon {
+    margin: 0;
+    padding-right: 40px;
+  }
+}
+
+
+
+
+
+
+  
+// .landing__caption--text {
+//   height: 56px; 
+//   width: 270px;
+//   font-size: 13px;    
+//   line-height: 28px;  
+//   text-align: center;
+// }
+
+
+// #exTab1 .tab-content {
+//   color : white;
+//   background-color: #428bca;
+//   padding : 5px 15px;
+// }
